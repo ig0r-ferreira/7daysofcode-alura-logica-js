@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-botoes {
+    display: flex;
+}
+
+button {
+    flex: 1;
+    font-size: 36px;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    /* border-radius: 10px; */
+}
+
+#botao-calcular, #botao-limpar {
+    flex: 2
+}

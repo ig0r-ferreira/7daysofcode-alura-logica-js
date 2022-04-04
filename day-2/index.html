@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days of Code - Day 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Olá, DEV!</h1>
+    <form id="form-inicial">
+        <div class="grupo-input">
+            <label for="nome" class="pergunta">Qual o seu nome?</label>
+            <input class="input-padrao" type="text" id="nome" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s]+$" required autofocus>
+        </div>
+        <br><br>
+        <div class="grupo-input">
+            <label for="idade" class="pergunta">Quantos anos você tem?</label>
+            <input class="input-padrao" type="number" id="idade" min="1" step=1 required>
+        </div>
+        <br><br>
+        <div class="grupo-input">
+            <label for="linguagem-programacao" class="pergunta">Qual linguagem de programação você está estudando?</label>
+            <input class="input-padrao" type="text" id="linguagem-programacao" required>
+        </div>
+        <div class="container-botoes">
+            <input class="botao" type="submit" value="Enviar">
+            <input class="botao" type="reset" value="Limpar">
+        </div>
+    </form>
+    <form id="form-final" hidden disabled>
+        <label class="pergunta">Você está gostando de aprender </label>
+        <div id="container-opcoes">
+            <div>
+                <input type="radio" name="gosta-da-linguagem" id="sim" value="sim" checked>
+                <label for="sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" name="gosta-da-linguagem" id="nao" value="nao">
+                <label for="nao">Não</label>
+            </div>
+        </div>
+        <div class="container-botoes">
+            <input class="botao" type="submit" value="Enviar">
+            <input class="botao" type="button" id="botao-voltar" value="Voltar">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

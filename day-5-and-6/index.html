@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7 Days of Code - Day 5 and 6</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="icone"></div>
+            <h1 id="titulo">Lista de compras</h1>
+        </header>
+        
+        <form>
+            <input class="elemento-de-formulario" type="text" id="input-item" placeholder="Digite o item" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s-]+$" title="Informe apenas letras!" autofocus required>
+            <select class="elemento-de-formulario" id="selecao-categoria" required>
+                <option value="" selected disabled>Selecione uma categoria</option>
+            </select>
+            <button class="elemento-de-formulario" id="botao-adicionar">Adicionar</button>
+        </form>
+        
+        <div id="painel-compras"></div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
