@@ -5,35 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Days of Code - Day 7</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9818e6101.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="calculadora">
-        <div id="display"></div>
+        <div id="display">
+            <output id="output-auxiliar"></output>
+            <output id="output-principal"></output>
+        </div>
+        
         <div id="painel-botoes">
+            <button type="button" id="botao-limpar" value="Delete">AC</button>
+            <button type="button" id="botao-backspace" value="Backspace">
+                <i class="fa-solid fa-delete-left"></i>
+            </button>
+            <button type="button" class="botao-operacao" id="botao-divisao" value="/">&#247;</button>
+        
+            <button type="button" class="botao-numerico" id="botao-7" value="7">7</button>
+            <button type="button" class="botao-numerico" id="botao-8" value="8">8</button>
+            <button type="button" class="botao-numerico" id="botao-9" value="9">9</button>
+            <button type="button" class="botao-operacao" id="botao-multiplicacao" value="*">&#215;</button>
             
-                <button type="button" id="botao-limpar">C</button>
-                <button type="button" id="botao-backspace">CE</button>
-                <button type="button" id="botao-dividir">&#247;</button>
+            <button type="button" class="botao-numerico" id="botao-4" value="4">4</button>
+            <button type="button" class="botao-numerico" id="botao-5" value="5">5</button>
+            <button type="button" class="botao-numerico" id="botao-6" value="6">6</button>
+            <button type="button" class="botao-operacao" id="botao-subtracao" value="-">&#8722;</button>
             
-                <button type="button" id="botao-7">7</button>
-                <button type="button" id="botao-8">8</button>
-                <button type="button" id="botao-9">9</button>
-                <button type="button" id="botao-multiplicar">&#215;</button>
+            <button type="button" class="botao-numerico" id="botao-1" value="1">1</button>
+            <button type="button" class="botao-numerico" id="botao-2" value="2">2</button>
+            <button type="button" class="botao-numerico" id="botao-3" value="3">3</button>
+            <button type="button" class="botao-operacao" id="botao-soma" value="+">&#43;</button>
             
-                <button type="button" id="botao-4">4</button>
-                <button type="button" id="botao-5">5</button>
-                <button type="button" id="botao-6">6</button>
-                <button type="button" id="botao-subtrair">&#8722;</button>
-            
-                <button type="button" id="botao-1">1</button>
-                <button type="button" id="botao-2">2</button>
-                <button type="button" id="botao-3">3</button>
-                <button type="button" id="botao-somar">&#43;</button>
-            
-                <button type="button" id="botao-0">0</button>
-                <button type="button" id="botao-virgula">,</button>
-                <button type="button" id="botao-calcular">=</button>
+            <button type="button" class="botao-numerico" id="botao-0" value="0">0</button>
+            <button type="button" id="botao-virgula" value=".">,</button>
+            <button type="button" id="botao-calcular" value="=">=</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
