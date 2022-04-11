@@ -159,7 +159,7 @@ Por exemplo: **_"Não foi possível encontrar o item dentro da lista!"_**
 
 Lembre-se que a opção de remover um item só deverá estar disponível a partir do momento que **existir ao menos um elemento dentro da lista de compras**.
 
-## :date: Dia 7 - Em andamento 🚧
+## :date: Dia 7 - Concluído ✅
 
 Para o exercício de hoje: **você já parou para pensar como uma calculadora funciona**?
 
